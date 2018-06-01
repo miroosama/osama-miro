@@ -1,0 +1,21 @@
+{
+  "name": "osama-miro",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "d3": "^5.1.0",
+    "gsap": "^1.20.4",
+    "react": "^16.3.2",
+    "react-addons-transition-group": "^15.6.2",
+    "react-dom": "^16.3.2",
+    "react-faux-dom": "^4.1.0",
+    "react-gsap-enhancer": "^0.3.0",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
