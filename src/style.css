@@ -78,22 +78,44 @@ html, body, #container {
     margin: auto;
 }
 .story {
-  width: 505px;
-  height: 505px;
-    background-image:url(./img/FinalBean.png);
+  width: 550px;
+  height: 550px;
+    background-image:url(./img/Untitled-story.png);
     background-repeat:no-repeat;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 70px;
     margin: auto;
 }
 .mission {
   width: 550px;
   height: 550px;
-    background-image:url(./img/revisedmission1.png);
+    background-image:url(./img/Aboutmedit5.png);
     background-repeat:no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 70px;
+    margin: auto;
+}
+.text2 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 100;
+  right: 0;
+  color:#FFFFFF;
+  margin:auto;
+}
+
+.choice {
+  width: 550px;
+  height: 550px;
     position: absolute;
     top: 0;
     bottom: 0;

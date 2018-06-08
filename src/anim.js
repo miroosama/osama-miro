@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import logo from './logo.svg';
 import './App.css';
 import {TweenMax, Power1, TimelineLite} from "gsap";
@@ -9,6 +10,7 @@ import BoxTwo from './boxtwo.js'
 import BoxThree from './boxthree.js'
 import About from './aboutme.js'
 import './style.css'
+import ReactPlayer from 'react-player'
 
 //or get to the parts that aren't included inside TweenMax:
 // import Draggable from "gsap/Draggable";
@@ -67,12 +69,26 @@ toggleBox3 = (e) => {
 //   let shape = target.find({type: 'circle'})
 //   return TweenMax.to(shape, 1, {cx: 123})
 // }
+
+chooseNarrative = () => {
+  if(this.state.clicked == true && this.state.clicked3 == false) {
+    return this.showMission()
+  } else if (this.state.clicked3 == true & this.state.clicked == false) {
+    return this.showStory()
+  } else if (this.state.clicked == true && this.state.clicked3 == true){
+    return <ReactPlayer className="choice" url='https://youtu.be/Y3IMms8g-lg' playing />
+  }
+
+}
+
+
+
   render() {
     return(
       <div className="page">
-        <link className="text" href="https://github.com/miroosama">Github</link>
-        {this.state.clicked ? this.showMission() : null}
-        {this.state.clicked3 ? this.showStory() : null}
+        <a className="text" target="_blank" href="https://github.com/miroosama">Github</a>
+        <a className="text2" target="_blank" href="https://github.com/miroosama">LinkedIn</a>
+        {this.chooseNarrative()}
         <div className="about" ref={c => this.container = c} />
         <TransitionGroup>
         {this.state.clicked && <Box />}
@@ -84,25 +100,25 @@ toggleBox3 = (e) => {
         className="toggle-btn"
         onClick={this.toggleBox}
       >
-        toggle
+        About Me
       </button>
         <button
         className="toggle-btn"
         onClick={this.toggleBox1}
       >
-        toggle
+        Portfolio
       </button>
         <button
         className="toggle-btn"
         onClick={this.toggleBox2}
       >
-        toggle
+        Me
       </button>
         <button
         className="toggle-btn"
         onClick={this.toggleBox3}
       >
-        toggle
+        A Story
       </button>
       </div>
     );
@@ -110,3 +126,7 @@ toggleBox3 = (e) => {
 }
 
 export default GSAP()(Anim);
+
+
+// {this.state.clicked ? this.showMission() : null}
+// {this.state.clicked3 ? this.showStory() : null}
