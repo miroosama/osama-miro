@@ -80,13 +80,13 @@ html, body, #container {
 .story {
   width: 550px;
   height: 550px;
-    background-image:url(./img/Untitled-story.png);
+    background-image:url(./img/Untitled-story1.png);
     background-repeat:no-repeat;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 70px;
+    right: 40px;
     margin: auto;
 }
 .mission {
@@ -122,4 +122,33 @@ html, body, #container {
     left: 0;
     right: 70px;
     margin: auto;
+}
+.boox {
+  width:400px;
+  height:400px;
+  position:fixed;
+  right:80px;
+  border-radius:6px;
+  margin-top:4px;
+  display:inline-block;
+  background-color: #0D429E;
+}
+
+.boox2 {
+  width:400px;
+  height:400px;
+  position:fixed;
+  right:40px;
+  border-radius:6px;
+  margin-top:4px;
+  display:inline-block;
+  background-color: #0B1B37;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
 }

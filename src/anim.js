@@ -11,6 +11,7 @@ import BoxThree from './boxthree.js'
 import About from './aboutme.js'
 import './style.css'
 import ReactPlayer from 'react-player'
+import PortfolioCircle from './portfoliocircle.js'
 
 //or get to the parts that aren't included inside TweenMax:
 // import Draggable from "gsap/Draggable";

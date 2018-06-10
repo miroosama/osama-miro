@@ -4,6 +4,9 @@ import {TweenMax, Power1, TimelineLite} from "gsap";
 import GSAP from 'react-gsap-enhancer'
 import TransitionGroup from 'react-addons-transition-group';
 import './style.css'
+import {withFauxDOM} from 'react-faux-dom'
+import * as d3 from "d3";
+import PortfolioCircle from './portfoliocircle.js'
 
 class BoxTwo extends React.Component {
   componentWillEnter (callback) {
@@ -19,7 +22,9 @@ class BoxTwo extends React.Component {
 
   render () {
     return(
-      <div className="boxtwo" ref={c => this.container = c}/>
+      <div className="boxtwo" ref={c => this.container = c}>
+        <PortfolioCircle />
+      </div>
     )
   }
 }
