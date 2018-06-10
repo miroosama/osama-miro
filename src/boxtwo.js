@@ -22,7 +22,8 @@ class BoxTwo extends React.Component {
 
   render () {
     return(
-      <div className="boxtwo" ref={c => this.container = c}>
+      <div>
+      <div className="boxtwo" ref={c => this.container = c} />
         <PortfolioCircle />
       </div>
     )
@@ -30,3 +31,7 @@ class BoxTwo extends React.Component {
 }
 
 export default GSAP()(BoxTwo);
+
+
+// <a className="text" target="_blank" href="https://github.com/miroosama">Github</a>
+// <a className="text2" target="_blank" href="https://www.linkedin.com/in/osamamiro/">LinkedIn</a>

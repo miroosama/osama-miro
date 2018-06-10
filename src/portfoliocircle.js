@@ -12,17 +12,28 @@ class PortfolioCircle extends React.Component {
   componentDidMount(callback) {
     const el = this.container;
     console.log(el)
-    TweenMax.staggerTo(".boox", 1, {rotation:360, y:100}, .2);
-    TweenMax.staggerTo(".boox2", 1, {rotation:360, y:300}, 3);
-    TweenMax.staggerTo(".boox3", 1, {rotation:360, y:300}, 3);
+    TweenMax.staggerTo(".boox", 1, {rotation:360, y:20}, .2);
+    TweenMax.staggerTo(".boox2", 1, {rotation:360, y:30}, .2);
+    TweenMax.staggerTo(".boox3", 1, {rotation:360, y:30}, .2);
   }
+
+  handleGithub = (e) => {
+    console.log(e)
+    window.open("https://github.com/miroosama")
+  }
+
+  handleLinked = (e) => {
+    console.log(e)
+    window.open("https://www.linkedin.com/in/osamamiro/")
+  }
+
 
   render () {
 
     return(
       <div>
-        <div className="boox" ref={c => this.container = c}>HI</div>
-        <div className="boox2" ref={c => this.container = c}/>
+        <div onClick={this.handleGithub} className="boox" ref={c => this.container = c}>Github</div>
+        <div onClick={this.handleLinked} className="boox2" ref={c => this.container = c}>LinkedIn</div>
         <div className="boox3" ref={c => this.container = c}/>
         </div>
     )

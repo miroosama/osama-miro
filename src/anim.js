@@ -87,8 +87,6 @@ chooseNarrative = () => {
   render() {
     return(
       <div className="page">
-        <a className="text" target="_blank" href="https://github.com/miroosama">Github</a>
-        <a className="text2" target="_blank" href="https://github.com/miroosama">LinkedIn</a>
         {this.chooseNarrative()}
         <div className="about" ref={c => this.container = c} />
         <TransitionGroup>
