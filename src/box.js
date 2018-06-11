@@ -9,7 +9,7 @@ class Box extends React.Component {
   componentWillEnter (callback) {
     const el = this.container;
     console.log(el)
-    TweenMax.fromTo(el, 0.8, {y: 100, opacity: 0}, {y: 0, opacity: .5, onComplete: callback});
+    TweenMax.fromTo(el, 0.8, {y: 100, opacity: 0}, {y: 0, opacity: .9, onComplete: callback});
   }
 
   componentWillLeave (callback) {
@@ -33,7 +33,7 @@ class Box extends React.Component {
    }
     return(
       <div>
-      <div className="box" ref={c => this.container = c}/>
+      <div id="middle" className="box" ref={c => this.container = c}/>
     </div>
     )
   }
