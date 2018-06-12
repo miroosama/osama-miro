@@ -33,7 +33,7 @@ class Box extends React.Component {
    }
     return(
       <div>
-      <div id="middle" className="box" ref={c => this.container = c}/>
+      <div className="box" ref={c => this.container = c}/>
     </div>
     )
   }

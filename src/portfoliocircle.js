@@ -37,10 +37,10 @@ class PortfolioCircle extends React.Component {
   }
 
   handleSkills = (e) => {
-    // this.setState({
-    //   skills: !this.state.skills
-    // })
-    window.scrollTo(500, 100);
+    this.setState({
+      skills: !this.state.skills
+    })
+    window.scrollTo(500, 500);
   }
 
 

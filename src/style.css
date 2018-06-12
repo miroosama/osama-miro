@@ -196,6 +196,7 @@ html, body, #container {
   margin-top:4px;
   display:inline-block;
   background-color: #DFB60F;
+    z-index:-1;
 }
 
 .dot {
@@ -206,7 +207,7 @@ html, body, #container {
   display: inline-block;
 }
 
-.skills {
+.noskills {
   width: 550px;
   height: 550px;
     background-image:url(./img/skillk1.png);
@@ -220,10 +221,28 @@ html, body, #container {
     z-index:-1;
 }
 
+.vid {
+  position:fixed;
+  left:955px;
+  top:220px;
+}
+
 .scrolltest {
   background-color: #bbb;
   height: 25px;
   width: 25px;
   position: absolute;
   top: 1000px;
+}
+
+.skills {
+  width: 800px;
+  height: 800px;
+    background-image:url(./img/skilll.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 1500px;
+    bottom: 0;
+    right: 550px;
+    margin: auto;
 }

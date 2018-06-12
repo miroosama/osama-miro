@@ -7,6 +7,8 @@ import './style.css'
 import {withFauxDOM} from 'react-faux-dom'
 import * as d3 from "d3";
 import PortfolioCircle from './portfoliocircle.js'
+import ReactPlayer from 'react-player'
+
 
 class BoxTwo extends React.Component {
   componentWillEnter (callback) {
@@ -24,6 +26,7 @@ class BoxTwo extends React.Component {
     return(
       <div>
       <div className="boxtwo" ref={c => this.container = c} />
+      <ReactPlayer className="vid" height="250px" width="450px"url='https://www.youtube.com/watch?v=AYtfof9n39Q&t=1s' playing />
         <PortfolioCircle />
       </div>
     )
