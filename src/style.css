@@ -236,13 +236,13 @@ html, body, #container {
 }
 
 .skills {
-  width: 800px;
+  width: 1000px;
   height: 800px;
-    background-image:url(./img/skilll.png);
+    background-image:url(./img/sklfrmt.png);
     background-repeat:no-repeat;
     position: absolute;
-    top: 1505px;
+    top: 1475px;
     bottom: 0;
-    right: 550px;
+    right: 400px;
     margin: auto;
 }
