@@ -10,6 +10,7 @@ import * as d3 from "d3";
 class PortfolioCircle extends React.Component {
   state = {
     skills: false,
+    contact: false,
   }
 
   componentDidMount(callback) {
@@ -34,6 +35,10 @@ class PortfolioCircle extends React.Component {
 
   handleContact = (e) => {
     console.log(e)
+    this.setState({
+      contact: !this.state.contact
+    })
+    window.scrollTo(500, 500);
   }
 
   handleSkills = (e) => {
@@ -51,8 +56,9 @@ class PortfolioCircle extends React.Component {
         <div onClick={this.handleGithub} className="boox" ref={c => this.container = c}>Github</div>
         <div onClick={this.handleLinked} className="boox2" ref={c => this.container = c}>LinkedIn</div>
         <div onClick={this.handleContact} className="boox4" ref={c => this.container = c}>Contact</div>
-        <div onClick={this.handleSkills} className="boox5" ref={c => this.container = c}>Framworks</div>
+        <div onClick={this.handleSkills} className="boox5" ref={c => this.container = c}>Recent Work</div>
         {this.state.skills ? <div className="skills" ref={c => this.container = c} /> : null}
+        {this.state.contact ? <div className="contact" ref={c => this.container = c} /> : null}
         <div className="boox3" ref={c => this.container = c}/>
         <div className="boox6" ref={c => this.container = c}/>
         </div>

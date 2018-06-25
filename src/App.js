@@ -13,6 +13,7 @@ class App extends Component {
     return(
       <div className="App">
         <Anim />
+        <div className="sig" ref={c => this.container = c} />
       </div>
     );
   }

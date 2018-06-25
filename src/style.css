@@ -237,12 +237,36 @@ html, body, #container {
 
 .skills {
   width: 1000px;
-  height: 800px;
+  height: 1000px;
     background-image:url(./img/sklfrmt.png);
     background-repeat:no-repeat;
     position: absolute;
-    top: 1475px;
+    top: 1700px;
     bottom: 0;
     right: 400px;
     margin: auto;
+    z-index:+1;
+}
+
+.contact {
+  width: 1000px;
+  height: 800px;
+    background-image:url(./img/Project11.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 1500px;
+    bottom: 0;
+    right: 320px;
+    margin: auto;
+}
+
+.sig {
+  width: 100%;
+  height: 1000px;
+    background-image:url(./img/ciggg.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    left:100px;
+    margin: auto;
+    z-index:-3;
 }
