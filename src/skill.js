@@ -4,14 +4,14 @@ import {TweenMax, Power1, TimelineLite} from "gsap";
 import GSAP from 'react-gsap-enhancer'
 import TransitionGroup from 'react-addons-transition-group';
 import './style.css'
-import PortfolioCircle from './portfoliocircle.js'
 import ReactPlayer from 'react-player'
 
 
-class BoxTwo extends React.Component {
+class Skill extends React.Component {
+
   componentWillEnter (callback) {
     const el = this.container;
-    console.log(el)
+    console.log(el, "hello")
     TweenMax.fromTo(el, 0.8, {y: 100, opacity: 0}, {y: 0, opacity: .5, onComplete: callback});
   }
 
@@ -21,18 +21,13 @@ class BoxTwo extends React.Component {
   }
 
   render () {
+    console.log("hello")
     return(
       <div>
-      <div className="boxtwo" ref={c => this.container = c} />
-      <ReactPlayer className="vid" height="250px" width="450px"url='https://www.youtube.com/watch?v=AYtfof9n39Q&t=1s' playing />
-        <PortfolioCircle />
+      <div className="boox7" ref={c => this.container = c} />
       </div>
     )
   }
 }
 
-export default GSAP()(BoxTwo);
-
-
-// <a className="text" target="_blank" href="https://github.com/miroosama">Github</a>
-// <a className="text2" target="_blank" href="https://www.linkedin.com/in/osamamiro/">LinkedIn</a>
+export default GSAP()(Skill);

@@ -60,6 +60,7 @@ toggleBox2 = (e) => {
   this.setState({
     clicked2: !this.state.clicked2
   })
+  window.scrollTo(250, 900);
 }
 toggleBox3 = (e) => {
   this.setState({

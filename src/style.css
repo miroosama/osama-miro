@@ -270,3 +270,16 @@ html, body, #container {
     margin: auto;
     z-index:-3;
 }
+
+.boox7 {
+  width:1000px;
+  height:1000px;
+  position:absolute;
+  right:402px;
+  top:700px;
+  border-radius:6px;
+  margin-top:4px;
+  display:inline-block;
+  background-color: #DFB60F;
+  z-index:+3;
+}
