@@ -12,6 +12,7 @@ import About from './aboutme.js'
 import './style.css'
 import ReactPlayer from 'react-player'
 import PortfolioCircle from './portfoliocircle.js'
+import MetaTags from 'react-meta-tags'
 
 //or get to the parts that aren't included inside TweenMax:
 // import Draggable from "gsap/Draggable";
@@ -60,7 +61,6 @@ toggleBox2 = (e) => {
   this.setState({
     clicked2: !this.state.clicked2
   })
-  window.scrollTo(250, 900);
 }
 toggleBox3 = (e) => {
   this.setState({
@@ -97,25 +97,25 @@ chooseNarrative = () => {
         {this.state.clicked3 && <BoxThree />}
         </TransitionGroup>
         <button
-        className="toggle-btn"
+        className="btn"
         onClick={this.toggleBox}
       >
         About Me
       </button>
         <button
-        className="toggle-btn"
+        className="btn"
         onClick={this.toggleBox1}
       >
         Portfolio
       </button>
         <button
-        className="toggle-btn"
+        className="btn"
         onClick={this.toggleBox2}
       >
         Me
       </button>
         <button
-        className="toggle-btn"
+        className="btn"
         onClick={this.toggleBox3}
       >
         A Story

@@ -12,6 +12,7 @@ class App extends Component {
   render() {
     return(
       <div className="App">
+        <meta className="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
         <Anim />
         <div className="sig" ref={c => this.container = c} />
       </div>
