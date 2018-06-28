@@ -126,7 +126,7 @@ chooseNarrative = () => {
 }
 
 export default GSAP()(Anim);
-
+// <div className="mission" ref={c => this.container = c} />
 
 // {this.state.clicked ? this.showMission() : null}
 // {this.state.clicked3 ? this.showStory() : null}

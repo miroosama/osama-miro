@@ -18,7 +18,7 @@ html, body, #container {
   left: 0;
   right: 40px;
   margin: auto;
-  z-index:-1;
+  z-index:-2;
 }
 .boxthree {
   max-width: 550px;
@@ -59,7 +59,7 @@ html, body, #container {
     font-family: Times;
 }
 .btn:active {
-  background-color: #f2f2f2 ;
+  background-color: darkgrey ;
 }
 
 .text {
@@ -89,26 +89,28 @@ html, body, #container {
 .story {
   width: 550px;
   height: 550px;
-    background-image:url(./img/Untitled-story1.png);
+    background-image:url(./img/Untitled-story2.png);
     background-repeat:no-repeat;
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 40px;
+    left: 95px;
+    right: 0px;
     margin: auto;
 }
 .mission {
   width: 550px;
   height: 550px;
-    background-image:url(./img/Aboutmedit5.png);
+    background-image:url(./img/Aboutmedit7.png);
+    color:white;
     background-repeat:no-repeat;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 70px;
+    right: 1px;
     margin: auto;
+    z-index: -1;
 }
 .text2 {
   width: 500px;
@@ -229,9 +231,11 @@ html, body, #container {
 }
 
 .vid {
-  position:fixed;
-  left:955px;
-  top:220px;
+  position:absolute;
+  left:80px;
+  top:740px;
+  opacity: 0.9;
+  z-index: +3;
 }
 
 .scrolltest {
@@ -242,18 +246,18 @@ html, body, #container {
   top: 1000px;
 }
 
-.skills {
+/* .skills {
   width: 1000px;
   height: 1000px;
     background-image:url(./img/sklfrmt.png);
     background-repeat:no-repeat;
     position: absolute;
-    top: 1700px;
+    top: 1600px;
     bottom: 0;
     right: 400px;
     margin: auto;
-    z-index:+1;
-}
+    z-index: -1;
+} */
 
 .contact {
   width: 1000px;
@@ -265,6 +269,7 @@ html, body, #container {
     bottom: 0;
     right: 320px;
     margin: auto;
+    z-index: 0;
 }
 
 .sig {
@@ -291,22 +296,56 @@ html, body, #container {
   z-index:+3;
 }
 
+.form {
+width:415px;
+height:230px;
+position:fixed;
+left:990px;
+top:220px;
+border-radius:6px;
+margin-top:4px;
+display:inline-block;
+background-color: #F0FFFF;
+opacity: 0.8;
+}
 @media only screen and (max-width: 768px) {
   .page {
     height: 100%;
     width: 100%;
   }
 .box {
-  width: 150%;
+  width: 140%;
+  z-index: -2;
 }
-.box2 {
-  width: 30%;
+.boxtwo {
+  width: 130%;
+  height:96%;
+  left: 0px;
+  right:100px;
 }
-.box3 {
+.boxthree {
+  width: 140%;
+  z-index:-1
+}
+.boxfour {
   width: 40%;
 }
-.box4 {
-  width: 40%;
+.mission {
+  z-index:-1
+}
+.boox {
+  right:250px;
+  top:110px;
+}
+.boox2 {
+  position: absolute;
+  right:50px;
+  top:100px;
+}
+.vid {
+  position:fixed;
+  left:0px;
+  top:220px;
 }
 .sig {
   width: 100%;

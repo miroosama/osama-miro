@@ -9,6 +9,15 @@ import ReactPlayer from 'react-player'
 
 
 class BoxTwo extends React.Component {
+  state = {
+    image: ""
+  }
+
+  componentDidMount(){
+    fetch(`https://www.instagram.com/p/BiNqEv_gK_7/?taken-by=mirosama_`)
+    .then(res => res.json())
+    .then(json => console.log(json))
+  }
   componentWillEnter (callback) {
     const el = this.container;
     console.log(el)
@@ -20,11 +29,18 @@ class BoxTwo extends React.Component {
     TweenMax.fromTo(el, 0.8, {y: 0, opacity: .5}, {y: -100, opacity: 0, onComplete: callback});
   }
 
+  handleForm = (e) => {
+    e.preventDefault()
+    console.log("e")
+  }
+
   render () {
+    console.log(this.state.image)
     return(
       <div>
       <div className="boxtwo" ref={c => this.container = c} />
-      <ReactPlayer className="vid" height="250px" width="450px"url='https://www.youtube.com/watch?v=AYtfof9n39Q&t=1s' playing />
+      <ReactPlayer className="vid" height="500px" width="900px"url='https://youtu.be/jrcQQ4Fc-Qs' loop="true" playing />
+      <img src={this.state.image} />
         <PortfolioCircle />
       </div>
     )
@@ -33,6 +49,22 @@ class BoxTwo extends React.Component {
 
 export default GSAP()(BoxTwo);
 
+// https://api.instagram.com/oembed?url=https://www.instagram.com/p/BiNqEv_gK_7/?taken-by=mirosama_
+// componentDidMount () {
+//     fetch(`http://localhost:3000/api/v1/results`)
+//     .then(res => res.json())
+//     .then(json => {
+//       this.setState({
+//         data: json
+//       })
+//     })
+// <form className="form" onSubmit={this.handleForm}>
+//   <label>
+//     Name:
+//     <textarea type="text" name="name" />
+//   </label>
+//   <input type="submit" value="Submit" />
+// </form>
 
 // <a className="text" target="_blank" href="https://github.com/miroosama">Github</a>
 // <a className="text2" target="_blank" href="https://www.linkedin.com/in/osamamiro/">LinkedIn</a>
