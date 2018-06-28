@@ -18,6 +18,7 @@ class BoxThree extends React.Component {
   }
 
   render () {
+    console.log("g")
     return(
       <div className="boxthree" ref={c => this.container = c}/>
     )

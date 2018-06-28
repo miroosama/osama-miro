@@ -328,6 +328,8 @@ z-index: +2
   width: 40%;
 }
 .mission {
+  left:-15px;
+  top:25px;
   z-index:-1
 }
 .boox {
@@ -350,19 +352,16 @@ position:absolute;
 top:530px;
 left:60px;
 width:80px;
-height:180px;
 border-radius:6px;
 margin-top:4px;
 display:inline-block;
 z-index: +2
 }
 .sig {
-  width: 100%;
-  height: 100%;
-    background-image:url(./img/ciggg.png);
+    background-image:url(./img/ciggg2.png);
     background-repeat:no-repeat;
     position: absolute;
-    left:100px;
+    right:500px;
     margin: auto;
     z-index:-3;
 }
@@ -378,5 +377,41 @@ z-index: +2
   background-color: #DFB60F;
     z-index:-1;
 }
-
+.boxthree {
+  max-width: 550px;
+  height: 650px;
+  background-color: #008000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 40px;
+  margin: auto;
+  z-index:-2;
+}
+.story {
+  width: 550px;
+  height: 550px;
+    background-image:url(./img/Untitled-story2.png);
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5px;
+    right: 0px;
+    margin: auto;
+    z-index: -1;
+}
+.me {
+  width: 500px;
+  height: 500px;
+    background-image:url(./img/newblood.jpg);
+    background-repeat:no-repeat;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 12px;
+    right: 0;
+    margin: auto;
+}
 }
