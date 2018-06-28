@@ -10,6 +10,7 @@
     "react-dom": "^16.3.2",
     "react-faux-dom": "^4.1.0",
     "react-gsap-enhancer": "^0.3.0",
+    "react-instagram-embed": "^1.4.0",
     "react-meta-tags": "^0.4.1",
     "react-player": "^1.6.3",
     "react-router-dom": "^4.2.2",

@@ -6,18 +6,18 @@ import TransitionGroup from 'react-addons-transition-group';
 import './style.css'
 import PortfolioCircle from './portfoliocircle.js'
 import ReactPlayer from 'react-player'
-
+import InstagramEmbed from 'react-instagram-embed'
 
 class BoxTwo extends React.Component {
   state = {
     image: ""
   }
 
-  componentDidMount(){
-    fetch(`https://www.instagram.com/p/BiNqEv_gK_7/?taken-by=mirosama_`)
-    .then(res => res.json())
-    .then(json => console.log(json))
-  }
+  // componentDidMount(){
+  //   fetch(`https://api.instagram.com/oembed?url=https://www.instagram.com/p/BiNqEv_gK_7/?taken-by=mirosama_`)
+  //   .then(res => res.json())
+  //   .then(json => console.log(json))
+  // }
   componentWillEnter (callback) {
     const el = this.container;
     console.log(el)
@@ -40,7 +40,19 @@ class BoxTwo extends React.Component {
       <div>
       <div className="boxtwo" ref={c => this.container = c} />
       <ReactPlayer className="vid" height="500px" width="900px"url='https://youtu.be/jrcQQ4Fc-Qs' loop="true" playing />
-      <img src={this.state.image} />
+        <InstagramEmbed
+          className="form"
+          url='https://www.instagram.com/p/BiNqEv_gK_7/?taken-by=mirosama'
+          maxWidth={320}
+          hideCaption={false}
+          containerTagName='div'
+          protocol=''
+          injectScript
+          onLoading={() => {}}
+          onSuccess={() => {}}
+          onAfterRender={() => {}}
+          onFailure={() => {}}
+        />
         <PortfolioCircle />
       </div>
     )
@@ -48,7 +60,6 @@ class BoxTwo extends React.Component {
 }
 
 export default GSAP()(BoxTwo);
-
 // https://api.instagram.com/oembed?url=https://www.instagram.com/p/BiNqEv_gK_7/?taken-by=mirosama_
 // componentDidMount () {
 //     fetch(`http://localhost:3000/api/v1/results`)
