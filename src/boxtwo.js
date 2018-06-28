@@ -39,7 +39,7 @@ class BoxTwo extends React.Component {
     return(
       <div>
       <div className="boxtwo" ref={c => this.container = c} />
-      <ReactPlayer className="vid" height="500px" width="900px"url='https://youtu.be/jrcQQ4Fc-Qs' loop="true" playing />
+      <ReactPlayer className="vid" height="70%" width="65%"url='https://youtu.be/jrcQQ4Fc-Qs' loop="true" playing />
         <InstagramEmbed
           className="form"
           url='https://www.instagram.com/p/BiNqEv_gK_7/?taken-by=mirosama'

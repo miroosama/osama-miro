@@ -232,8 +232,8 @@ html, body, #container {
 
 .vid {
   position:absolute;
-  left:60px;
-  top:740px;
+  left:45px;
+  top:750px;
   opacity: 0.9;
   z-index: +3;
 }
@@ -331,18 +331,30 @@ z-index: +2
   z-index:-1
 }
 .boox {
+  position: absolute;
   right:250px;
-  top:110px;
+  top:20px;
 }
 .boox2 {
   position: absolute;
   right:50px;
-  top:100px;
+  top:12px;
 }
 .vid {
-  position:fixed;
-  left:0px;
-  top:220px;
+  position:absolute;
+  left:63px;
+  top:130px;
+}
+.form {
+position:absolute;
+top:530px;
+left:60px;
+width:80px;
+height:180px;
+border-radius:6px;
+margin-top:4px;
+display:inline-block;
+z-index: +2
 }
 .sig {
   width: 100%;
@@ -354,4 +366,17 @@ z-index: +2
     margin: auto;
     z-index:-3;
 }
+.boox6 {
+  width:1000px;
+  height:1000px;
+  position:absolute;
+  left:1px;
+  top:520px;
+  border-radius:6px;
+  margin-top:4px;
+  display:inline-block;
+  background-color: #DFB60F;
+    z-index:-1;
+}
+
 }
